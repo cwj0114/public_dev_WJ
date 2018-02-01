@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="../jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $().ready(function() {
+
+        $("#jobs").change(function() {
+          var optionValue = $(this).val();
+          alert(optionValue);
+        });
+
+        $("input[type=button]").on("click", function() {
+          let userId = $("#userId").val();
+          let userPassword = $("#userPassword").val();
+          let date = $("#date").val();
+          let datetime = $("#datetime").val();
+          let color = $("#color").val();
+
+          const userIdDom = $(`<span>${userId}</span>`);
+          $("#userId").after(userIdDom);
+          const userPasswordDom = $(`<span>${userPassword}</span>`);
+          $("#userPassword").after(userPasswordDom);
+          const dateDom = $(`<span>${date}</span>`);
+          $("#date").after(dateDom);
+          const datetimeDom = $(`<span>${datetime}</span>`);
+          $("#datetime").after(datetimeDom);
+          const colorDom = $(`<span>${color}</span>`);
+          $("#color").after(colorDom);
+
+          // var userId = $("#userId").val();
+          // $("#userId").after(userId);
+          // $("<span>"+userId+"</span>");
+          //
+          // var userPassword = $("#userPassword").val();
+          // $("#userPassword").after(userPassword);
+          // $("<span>"+userPassword+"</span>");
+          //
+          // var date = $("#date").val();
+          // $("#date").after(date);
+          // $("<span>"+date+"</span>");
+          //
+          // var datetime = $("#datetime").val();
+          // $("#datetime").after(datetime);
+          // $("<span>"+datetime+"</span>");
+          //
+          // var color = $("#color").val();
+          // $("#color").after(color);
+          // $("<span>"+color+"</span>");
+
+        });
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <form id="signUpForm">
+
+      <p>
+        <input type="text" id="userId" name="userId" placeholder="User ID" />
+      </p>
+
+      <p>
+        <input type="password" id="userPassword"
+               name="userPassword" placeholder="User Password" />
+      </p>
+
+      <p>
+        <input type="date" id="date" name="date" placeholder="Date" />
+      </p>
+
+      <p>
+        <input type="datetime-local" id="datetime" name="datetime" placeholder="Date Time" />
+      </p>
+
+      <p>
+        <input type="color" id="color" name="color" placeholder="Color" />
+      </p>
+
+      <p>
+        <select id="jobs" name="jobs">
+          <option value="0">선택하세요.</option>
+          <option value="1">회사원</option>
+          <option value="2">학생</option>
+          <option value="3">교수</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="button" id="submit" value="Submit" />
+      </p>
+
+    </form>
+
+  </body>
+</html>
