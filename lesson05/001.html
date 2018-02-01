@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./layout.css" />
+    <title>Boxes</title>
+    <script type="text/javascript" src="../jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $().ready(function() {
+          // $(".box").css("opacity", "0.25");
+
+      //여러가지 css 한번에 바꿀때
+          // $(".box").css({
+          //   "opacity": "0.25",
+          //   "background-color": "#F00"
+          // });
+
+      //점점 바꿀때
+          // $(".box").animate({
+          //   "opacity": "0.25",
+          //   "background-color": "#F00",
+          //   "font-size": "19pt",
+          //   "height": "500px"
+          // }, 3000); //속도
+
+          $(".box").mouseover(function() {
+            $(".box").animate({"opacity": 0.25});
+
+          });
+      });
+    </script>
+  </head>
+  <body class="boxAnimate">
+    <div class="box inline">
+      ABCDE
+    </div>
+    <div class="box inline">
+      ABCDE
+    </div>
+    <div class="box inline">
+      ABCDE
+    </div>
+    <div class="box inline">
+      ABCDE
+    </div>
+    <div class="box inline">
+      ABCDE
+    </div>
+    <div class="box inline">
+      ABCDE
+    </div>
+  </body>
+</html>
