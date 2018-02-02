@@ -1,0 +1,107 @@
+body, input, span, textarea {
+    margin: 0px;
+    font-size: 15pt;
+}
+
+textarea {
+    padding: 0px;
+}
+
+div#wrapper {
+    margin: 0 auto;
+    width: 900px;
+    max-width: 900px;
+}
+
+div#wrapper > header {
+    background-color: #333333;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+}
+
+div#wrapper > header > div {
+    color: #FFFFFF;
+    font-size: 20pt;
+}
+
+div#wrapper > header > nav {
+    background-color: #333333;
+    color: #F3F3F3;
+}
+
+div#wrapper > header > nav > section > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#wrapper > header > nav > section > ul > li {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+div#wrapper > header > nav > section > ul > li:FIRST-CHILD {
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 409px;
+}
+
+div#wrapper > section#body {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+span.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #747fff;
+    color: #F3F3F3;
+    margin-bottom: 10px;
+}
+
+span.button:HOVER {
+    background-color: #F3F3F3;
+    color: #747fff;
+}
+
+
+/** join.html **/
+section#body input[type="text"], section#body input[type="password"], textarea {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #777777;
+}
+
+section#body input[type="button"] {
+    padding: 5px;
+}
+
+table {
+    width: 850px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+table thead tr{
+    background-color: #F3F3F3;
+}
+
+table thead th{
+    padding: 10px;
+}
+
+table tbody td{
+    padding: 10px;
+    cursor: pointer;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #FBFBFB;
+}

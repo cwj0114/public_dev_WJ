@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      window.onload = function() {
+
+        const scores = [100, 90, 80, 70, 60];
+        // 1. 전통 for
+        console.log("전통 for");
+        for ( let i = 0; i < scores.length; i+=1 ) {
+          console.log(scores[i]);
+        }
+        // 2. for - in
+        console.log("for - in");
+        for ( let i in scores ) {
+          console.log(scores[i]);
+        }
+        // 3. for each  (함수지향방식)
+        console.log("for each");
+        scores.forEach(function(data, index) {
+            console.log(data, index );
+        });
+        // 4. for - of
+        console.log("for - of");
+        for ( let score of scores ) {
+          console.log(score);
+        }
+/////////////////////////////////////////////////////////
+        const person = {
+          name: "Choi Won Jun",
+          city: "Seoul",
+          gu: "Seocho"
+        };
+
+        console.log("Literal for - in");
+        for( var key in person ) {
+          console.log(key, person[key]);
+        }
+
+        // console.log("Literal for - of");
+        // for( let value of person) {
+        //   console.log(value) ;
+        // }
+
+      };
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <style type="text/css">
+        input[type="text"], textarea {
+            width: 850px;
+        }
+    </style>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/store.js" type="text/javascript"></script>
+    <script src="js/join.js" type="text/javascript"></script>
+    <script src="js/sign.js" type="text/javascript"></script>
+    <script src="js/forum.view.js" type="text/javascript"></script>
+    <script src="js/forums.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <section>
+                    <ul>
+                        <li>ECMAScript 2015</li><!--
+                        --><li>Join</li><!--
+                        --><li>Sign In</li><!--
+                        --><li>Lecture</li><!--
+                        --><li>Forums</li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <section id="body">
+            <h3>Forums</h3>
+            <hr/>
+            <span id="write" class="button">Write</span>
+            <div class="writeSubject">
+                <form>
+                    <p>
+                        <input type="text" id="subject" placeholder="Subject" />
+                    </p>
+                    <p>
+                        <textarea id="content" placeholder="Content"></textarea>
+                    </p>
+                    <p>
+                        <span id="done" class="button" style="margin-bottom: 10px;">Done</span>
+                    </p>
+                </form>
+                <hr/>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Subject</th>
+                        <th>Writer</th>
+                        <th>Read</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <span id="more">More...</span>
+            <input type="text" id="search" placeholder="검색어를 입력하세요." />
+        </section>
+    </div>
+</body>
+</html>

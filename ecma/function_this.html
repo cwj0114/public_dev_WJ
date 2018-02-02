@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      window.onload = function() {
+
+        function FunctionThis() {
+          this.lastNumber = 10;
+          console.log(this);
+
+          this.hello = function() {
+            console.log(this); // FunctionThis
+            const that = this; // That ==> FunctionThis
+            document.querySelector("body").onclick = function() {
+
+              console.log(that);
+              console.log(this);
+              console.log(this.lastNumber);
+
+            };
+          };
+        }
+
+        // FunctionThis(); // --> window
+
+        // Function을 클래스로 사용. ==> 객체 생성
+        // Ptototype 기반의 Javascript 사용
+        const fun = new FunctionThis();
+        fun.hello();
+
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

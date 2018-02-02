@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "subject": "ECMAScript 2015",
+      "content": "Welcome to ECMAScript 2015 world",
+      "read": 4,
+      "writer": "lkjfsd",
+      "writerId": "jmc",
+      "number": 1
+    }
+  ]
+}
